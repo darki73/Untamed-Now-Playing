@@ -650,9 +650,10 @@ $(document).ready(function()
 		case 'vk.com':
 			setInterval(function(){
 				if ($('#gp_play').hasClass('playing')){
-					var artistName = $('#gp_performer').text();
-					var trackName  = $('#gp_title').text();
-					var play       = artistName + ' - ' + trackName;
+					var artistName 		= $('#ac_performer').text();
+					var trackName  		= $('#ac_title').text();
+					var trackDuration	= $('#ac_duration').text();
+					var play       = artistName + ' - ' + trackName + '(' + trackDuration + ')';
 
 					if (last !== play){
 						nowPlaying(
